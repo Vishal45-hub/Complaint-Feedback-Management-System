@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 # MongoDB Configuration - Use a more reliable connection string
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI", "mongodb://localhost:27017/complaints_db?connectTimeoutMS=30000&serverSelectionTimeoutMS=30000")
-app.config["SECRET_KEY"] = "complaint_system_secret_key"
+app.config["SECRET_KEY"] = os.environ.get("FLASK_SECRET_KEY", "local-development-only-change-me")
 
 # Initialize MongoDB with error handling
 try:
@@ -231,3 +231,4 @@ if __name__ == '__main__':
     log.setLevel(logging.ERROR)
     
     app.run(debug=False, host='0.0.0.0', port=5000, use_reloader=False)
+
