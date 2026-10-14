@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management System - Launch</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 500px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .status {
+            background: rgba(0, 255, 0, 0.2);
+            border: 1px solid rgba(0, 255, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .url-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .url {
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 10px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .instructions {
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid rgba(255, 255, 255, 0.5);
+        }
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .note {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 System Ready!</h1>
+        
+        <div class="status">
+            ✅ Server is Running Successfully
+        </div>
+        
+        <div class="url-box">
+            <h3>Your Application is Available at:</h3>
+            <div class="url">http://127.0.0.1:5000</div>
+            <p>(Localhost - accessible only on your computer)</p>
+        </div>
+        
+        <button class="btn" onclick="window.open('http://127.0.0.1:5000', '_blank')">
+            🌐 Open Application
+        </button>
+        
+        <div class="instructions">
+            <h3>📋 Quick Instructions:</h3>
+            <ol>
+                <li><strong>Click the button above</strong> to open your application in a new browser tab</li>
+                <li><strong>Or manually copy and paste</strong> the URL into your browser: http://127.0.0.1:5000</li>
+                <li><strong>Start submitting complaints</strong> using the form</li>
+                <li><strong>Manage complaints</strong> using the buttons (Mark Resolved, Delete)</li>
+                <li><strong>Use search and filter</strong> to find specific complaints</li>
+            </ol>
+        </div>
+        
+        <div class="note">
+            💡 Tip: Keep this terminal window open while using the application. 
+            The server needs to be running for the application to work.
+        </div>
+    </div>
+</body>
+</html>

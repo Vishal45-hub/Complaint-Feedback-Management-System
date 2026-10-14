@@ -1,0 +1,6 @@
+@echo off
+echo Starting Complaint Management System...
+echo Server will be available at: http://127.0.0.1:5000
+echo.
+echo Please wait while the server starts...
+python app.py
